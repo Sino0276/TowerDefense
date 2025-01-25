@@ -26,7 +26,7 @@ public class Bullet : MonoBehaviour
 
         if (dir.magnitude <= distanceThisFrame)
         {
-            HitTarget();
+            // HitTarget();
             return;
         }
         
@@ -34,12 +34,12 @@ public class Bullet : MonoBehaviour
     }
 
     // ReSharper disable Unity.PerformanceAnalysis
-    private void HitTarget()
-    {
-        GameObject effectIns = Instantiate(impactEffect, transform.position, Quaternion.identity);
-        Destroy(effectIns, 2f);
-        
-        Destroy(target.gameObject);
-        Destroy(gameObject);
-    }
+    // private void HitTarget()
+    // {
+    //     GameObject effectIns = Instantiate(impactEffect, transform.position, Quaternion.identity);
+    //     Destroy(effectIns, 2f);
+    //     
+    //     Destroy(target.gameObject);
+    //     Destroy(gameObject);
+    // }
 }
