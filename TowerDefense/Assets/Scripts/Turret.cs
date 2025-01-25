@@ -58,7 +58,7 @@ public class Turret : MonoBehaviour
     
     void Update()
     {
-        if (target is null) { return; }
+        if (target == null) { return; }
         
         Vector3 dir = target.position - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(dir);
@@ -77,10 +77,10 @@ public class Turret : MonoBehaviour
     // ReSharper disable Unity.PerformanceAnalysis
     void Shoot()
     {
-        GameObject bulletGo = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        GameObject bulletGo = (GameObject) Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = bulletGo.GetComponent<Bullet>();
 
-        if (bullet != null)
+        if (bullet is not null)
         {
             bullet.Seek(target);
         }
