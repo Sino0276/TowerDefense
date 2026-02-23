@@ -118,6 +118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fbb158c89668f5448654ae4e53fbbc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseEnterColor: {r: 0.28917426, g: 0.9433962, b: 0.26254895, a: 1}
+  mouseEnterColor: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
   roadMaterial: {fileID: 2100000, guid: 5dd2ba00d6e63b848851860b0e32bd98, type: 2}
   roadParent: {fileID: 0}
